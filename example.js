@@ -30,11 +30,14 @@ const channelId = ""; //전송하고자 하는 채널의 channelId
 
 
 function response(room, msg, sender, isGroupChat, replier, imageDB, packageName) {
+    /**
+    로그인이 되어있지 않을 때만 로그인을 합니다.
+    **/
     if (!KaKaoChannelManger.isLogin()) {
-        KaKaoChannelManger.login(email, pw); //로그인이 안 되어있으면 로그인을 하고 되어있다면 로그인을 하지 않습니다.
+        KaKaoChannelManger.login(email, pw); 
     }
 
     if (msg == "/test") {
-        KaKaoChannelManger.send(KaKaoChannelManger.cookies, channelId, postId,JSON.stringify(data));
+        KaKaoChannelManger.send(KaKaoChannelManger.cookies, data, channelId, postId);
     }
 }

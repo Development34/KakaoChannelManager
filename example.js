@@ -20,13 +20,8 @@ const data = {
 };
 
 /**
-postId, channelId 확인 법
-1.채널에 접속한다
-2.보내고자 하는 포스트를 누른다.
-3.맨 오른쪽 상단에 점 세개를 누르고 URL 복사를 누른다.
-
-그러면 pf.kakao.com/뒤에 영어로 된 부분이 채널아이디이고,
-그 뒤에 숫자로 된 부분이 postId이다.
+채널의 postId 와 channelId를 구하는 방법은 
+read.md 에 채널의 postId,channelId 구하는 법을 참고해주세요.
 **/
 
 const postId = ""; //전송하고자 하는 채널의 postId

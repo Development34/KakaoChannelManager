@@ -1,30 +1,13 @@
-```javascript
-var KaKao = require("KaKaoChannelManger");
-var KaKaoChannelManger = new KaKao();
 
-const email = ""; // your email
-const pw = ""; // your password
+# KaKaoChannelManager for 비공식 카카오톡 봇
 
-const data = {
-    "contents": [
-        {
-            "t": "text",
-            "v": '안녕하세요'
-        }
-    ],
-    "hidden_profile": true
-};
+© 2025 Development34, All rights reserved.
 
-const postId = "";
-const channelId = "";
+## 뭐하는 모듈 인가요?
+*체널에 메시지를 자동으로 전송해주는 모듈입니다.
 
-function response(room, msg, sender, isGroupChat, replier, imageDB, packageName) {
-    if (!KaKaoChannelManger.isLogin()) {
-        KaKaoChannelManger.login(email, pw);
-    }
+## 주의사항
+* 이 모듈 사용시 2차인증을 꺼주세요.
 
-    if (msg == "/test") {
-        KaKaoChannelManger.send(KaKaoChannelManger.cookies, channelId, postId);
-    }
-}
-
+## 예제
+* 예제는 example.js 을 확인해주세요
